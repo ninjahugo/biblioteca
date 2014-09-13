@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block titulo %}Intento 5{% endblock %}
+{% block cssninja %} <link rel="stylesheet" href="/media/css/imagen5.css">{% endblock %}
+
+{% block contenido %}
+<div class="row">
+  <div class="span8">
+    {% for dato in datos %}
+     <a href="{{dato}}">{{dato}}
+              <img src="http://{{dato}}"  width="350px" height="200px"><br>
+
+      </a>
+    {% endfor %}
+    {% for dat in datos  %}
+    	<img src="http://{{dat}}" width="50px" height="50px">
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}
